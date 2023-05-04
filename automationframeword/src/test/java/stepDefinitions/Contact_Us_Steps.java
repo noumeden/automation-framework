@@ -9,8 +9,8 @@ import org.openqa.selenium.WebDriver;
 import pageObject.BasePO;
 import pageObject.Contact_US_PO;
 public class Contact_Us_Steps extends BasePO {
-  /* Contact_US_PO contactUsPo = new Contact_US_PO();
-    private WebDriver driver = getDriver();
+   Contact_US_PO contactUsPo = new Contact_US_PO();
+
 
     @Given("I access the webdriver university contact us page")
     public void i_access_the_webdriver_university_contact_us_page() {
@@ -20,8 +20,6 @@ public class Contact_Us_Steps extends BasePO {
 
     @When("I enter a unique first name")
     public void i_enter_a_unique_first_name() {
-
-
    contactUsPo.setFisrt_name_field("jerome");
     }
 
@@ -81,13 +79,19 @@ contactUsPo.setComment_field("bienvenue au campus webdriver university");
         contactUsPo.setEmail_field(email);
 
     }
+    @And("^I click submit button$")
+    public void clickSubmitButton() {
+        contactUsPo.validateSubmitButtonContact();
+    }
 
     @And("I enter a specific comment {string}")
     public void i_enter_a_specific_comment(String comment) {
 
         contactUsPo.setComment_field(comment);
 
-    }*/
+    }
 
 
 }
+
+

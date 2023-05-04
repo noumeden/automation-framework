@@ -23,7 +23,7 @@ public class Contact_US_PO extends BasePO{
     @FindBy(name = "message")
     WebElement comment_field;
 
-    @FindBy(className = "contact_button")
+    @FindBy(xpath= "//input[@type='submit']")
     WebElement submit_field;
 
     @FindBy(id = "contact_reply")
